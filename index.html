@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UmpireRef</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title" id="header__title">UmpireRef</h1>
+    <div class="dropdown">
+      <button id="butAdd" class="headerButton dropdown"></button>
+    </div>
+  </header>
+
+  <main class="main games_list">
+    <div class="card cardTemplate games" hidden>
+    </div>
+    <div class="card games" id="game1">
+      <div class="location">Ulinzi Stars vs Tusker</div>
+      <div class="description"><i class="material-icons" style="color:#009966;vertical-align:bottom;">schedule</i>1500 hours<i class="material-icons" style="color:#CC0000;vertical-align:bottom;">place</i>Afraha Stadium</div>
+    </div>
+    <div class="card games" id="game2">
+      <div class="location">Posta Rangers vs City Stars</div>
+      <div class="description"><i class="material-icons" style="color:#009966;vertical-align:bottom;">schedule</i>1500 hours<i class="material-icons" style="color:#CC0000;vertical-align:bottom;">place</i>Ruaraka</div>
+    </div>
+    <div class="card games" id="game3">
+      <div class="location">Chemelil Sugar vs Sofapaka</div>
+      <div class="description"><i class="material-icons" style="color:#009966;vertical-align:bottom;">schedule</i>1500 hours<i class="material-icons" style="color:#CC0000;vertical-align:bottom;">place</i>Chemelil Stadium</div>
+    </div>
+    <div class="card games" id="game4">
+      <div class="location">Bandari vs Ushuru</div>
+      <div class="description"><i class="material-icons" style="color:#009966;vertical-align:bottom;">schedule</i>1500 hours<i class="material-icons" style="color:#CC0000;vertical-align:bottom;">place</i>Mbaraki Stadium</div>
+    </div>
+    <div class="card games" id="game5">
+      <div class="location">Thika United vs Western Stima</div>
+      <div class="description"><i class="material-icons" style="color:#009966;vertical-align:bottom;">schedule</i>1500 hours<i class="material-icons" style="color:#CC0000;vertical-align:bottom;">place</i>Thika Stadium</div>
+    </div>
+  </main>
+
+  <main class="main refs_list" hidden>
+
+    <div class="card games">
+      <div id="scores1" class="team1">0</div>
+      <div class="action">Scores</div>
+      <div id="scores2" class="team2">0</div>
+      </div>
+    </div>
+
+    <div class="card games">
+      <div id="fouls1" class="team1">0</div>
+      <div class="action">Fouls</div>
+      <div id="fouls2" class="team2">0</div>
+    </div>
+
+    <div class="card games">
+      <div id="kicks1" class="team1">0</div>
+      <div class="action">Corner Kicks</div>
+      <div id="kicks2" class="team2">0</div>
+    </div>
+
+    <div class="card games">
+      <div id="pens1" class="team1">0</div>
+      <div class="action">Penalties</div>
+      <div id="pens2" class="team2">0</div>
+    </div>
+
+    <div class="card games">
+      <div id="offs1" class="team1">0</div>
+      <div class="action">Offsides</div>
+      <div id="offs2" class="team2">0</div>
+    </div>
+  </main>
+
+  <div class="dialog-container team1-dialog-container">
+    <div class="dialog">
+      <div class="dialog-title">Select Player</div>
+      <div class="dialog-body">
+        <form action="">
+            <input type="radio" name="scorer" value="amwayi">Kevin Amwayi<br>
+            <input type="radio" name="scorer" value="amwayi">Hillary Echesa<br>
+            <input type="radio" name="scorer" value="amwayi">John Makwata<br>
+            <input type="radio" name="scorer" value="amwayi">Evans Orodi<br>
+            <input type="radio" name="scorer" value="amwayi">Sammy Simiyu<br>
+            <input type="radio" name="scorer" value="amwayi">Stephen Waruru<br>
+            <input type="radio" name="scorer" value="amwayi">Francis Onyiso<br>
+            <input type="hidden" name="parent_field1" id="parent_field1">
+        </form>
+      </div>
+      <div class="dialog-buttons">
+        <button id="butAddRecord1" class="button">Add</button>
+        <button id="butAddCancel1" class="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-container team2-dialog-container">
+    <div class="dialog">
+      <div class="dialog-title">Select Player</div>
+      <div class="dialog-body">
+        <form action="">
+            <input type="radio" name="scorer" value="amwayi">Jesee Were<br>
+            <input type="radio" name="scorer" value="amwayi">Boniface Ambani<br>
+            <input type="radio" name="scorer" value="amwayi">John Muiruri<br>
+            <input type="radio" name="scorer" value="amwayi">Edwin Mukenya<br>
+            <input type="radio" name="scorer" value="amwayi">James Mulinge<br>
+            <input type="radio" name="scorer" value="amwayi">John Mwangi<br>
+            <input type="radio" name="scorer" value="amwayi">Joseph Apindi<br>
+            <input type="hidden" name="parent_field2" id="parent_field2">
+        </form>
+      </div>
+      <div class="dialog-buttons">
+        <button id="butAddRecord2" class="button">Add</button>
+        <button id="butAddCancel2" class="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+<script src="scripts/app.js"></script>
+</body>
+</html>
